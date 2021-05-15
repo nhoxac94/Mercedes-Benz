@@ -1,6 +1,30 @@
-html,
-body {
-  font-family: Arial, Helvetica, sans-serif;
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
+}
+
+/* NEWS */
+.news__tabs {
+    display: flex;
+    justify-content: center;
+}
+.news__tabs .news__tab {
+    margin: 20px;
+}
+.news__tabs .news__tab button {
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    transition: all .7s;
+}
+.news__tabs .news__tab button:hover {
+    color: #00adef;
 }
 
 /* START TOPIC */
