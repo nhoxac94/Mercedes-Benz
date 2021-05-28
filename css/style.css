@@ -15,6 +15,16 @@ body {
   animation-name: fadeIn;
   animation-duration: 1s;
 }
+.inline-animation {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1.5s;
+}
+
+.inline-animation.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -51,6 +61,7 @@ body {
   display:block;
   top:0px;
   width:100%;
+
   transition: all 0.5s;
   width: 100%;
   z-index: 950;
@@ -296,7 +307,7 @@ body {
   height: 100%;
 }
 .news__more {
-  padding: 30px 0 100px;
+  padding-top: 30px;
 }
 .news__more button {
   border: 1px solid #202020;
@@ -312,6 +323,55 @@ body {
 .news__more button i {
   margin-right: 10px;
   font-size: 1.2em;
+}
+@media screen and (max-width: 1408px) {
+  .news__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .news__item:first-of-type {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+  }
+  .news__item:nth-child(10) {
+    grid-column: 1 / span 1;
+    grid-row: 5 / span 1;
+  }
+  .news__item:nth-child(19) {
+    grid-column: 1 / span 1;
+    grid-row: 9 / span 1;
+  }
+  .news__item:nth-child(28) {
+    grid-column: 1 / span 1;
+    grid-row: 13 / span 1;
+  }
+}
+@media screen and (max-width: 845px) {
+  .news__grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+/* END NEWS */
+
+/* START NEWS */
+
+.technology {
+  padding: 50px 0px;
+  color: #fff;
+  font-size: 14px;
+  width: calc(100% - 60px);
+  margin: 0 auto;
+}
+.technology__top {
+  margin-bottom: 30px;
+}
+.technology__top nobr {
+  margin-right: 20px;
+}
+.technology__top i {
+  font-size: 16px;
+  margin-right: 3px;
 }
 /* END NEWS */
 
@@ -479,7 +539,6 @@ body {
   color: #fff;
 }
 
-
 .footer__subnav a {
   color: #636363;
   text-decoration: none;
@@ -493,7 +552,6 @@ body {
 
 .footer__subnav-content {
   flex-direction: row-reverse;
- 
 }
 
 .footer__subnav-left ul {
@@ -518,20 +576,17 @@ body {
 
 /* START MODAL */
 
-#legal-modal{
+#legal-modal {
   display: block;
   font-size: 13px;
-  
-  
 }
-
 
 .modal-header {
   border: none;
 }
 .modal-body {
   color: #000;
-  margin-top: 20px;;
+  margin-top: 20px;
   margin: 0 40px;
 }
 
@@ -543,7 +598,7 @@ body {
 }
 
 .modal-dialog {
-  width: 892px; 
+  width: 892px;
   max-width: 90%;
 }
 .labal-nav ul {
@@ -560,8 +615,6 @@ body {
 #legal-tab-content p {
   margin-bottom: 1rem;
 }
-
-
 
 .agree span {
   line-height: 30px;
@@ -605,12 +658,12 @@ body {
 
 .technical__content::after,
 .analysis__content::after {
-  content: "";
+  content: '';
   width: 50px;
   height: 1px;
   background-color: #000;
   display: block;
-  margin: 28px 0 ;
+  margin: 28px 0;
   margin-left: -20px;
 }
 
@@ -641,11 +694,13 @@ body {
   font-size: 13px;
 }
 
-.form-situation .form-check{
+.form-situation .form-check {
   margin-bottom: 30px;
 }
 
-.form-group, .form-control, .custom-select {
+.form-group,
+.form-control,
+.custom-select {
   margin-bottom: 2rem;
 }
 /* END FOOTER */
@@ -662,8 +717,7 @@ body {
   .footer__subnav-content {
     max-width: 75%;
     float: right;
-  
-}
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -699,13 +753,12 @@ body {
     margin-bottom: 30px;
   }
   .footer__subnav {
-    max-width: 100%;   
-        
+    max-width: 100%;
   }
-  .footer__subnav-content{
+  .footer__subnav-content {
     max-width: 100%;
     float: left;
-    flex-direction: row;    
+    flex-direction: row;
   }
   .footer__backtotop {
     min-width: 100%;
@@ -718,37 +771,32 @@ body {
   }
 
   .analysis__item-speed {
-   min-width: 50%;   
-   margin-bottom: 2rem;
+    min-width: 50%;
+    margin-bottom: 2rem;
   }
 
   .analysis__item-google {
     max-width: 50%;
     margin-bottom: 2rem;
   }
-
 }
 
-
-
 @media screen and (max-width: 768px) {
-    .choose-setting button {   
-      margin-bottom: 1rem;
-      height: 35px;
-      font-size: 14px;
-      position: absolute;  
-      right: -80px;
-      width: 150px;
-      padding: 7px 15px;
+  .choose-setting button {
+    margin-bottom: 1rem;
+    height: 35px;
+    font-size: 14px;
+    position: absolute;
+    right: -80px;
+    width: 150px;
+    padding: 7px 15px;
   }
-  
 
   .btn-save {
     top: 0;
-    
   }
-  .btn-agree {  
-    top: 40px;  
+  .btn-agree {
+    top: 40px;
   }
 }
 
@@ -757,10 +805,6 @@ body {
     min-width: 100%;
     margin-bottom: 2rem;
   }
-
 }
-
-
-
 
 /* END MEDIA */
