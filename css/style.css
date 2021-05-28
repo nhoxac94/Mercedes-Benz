@@ -35,195 +35,196 @@ body {
   }
 }
 /* HEADER */
-#navbarmer a {
-  font-size: 14px;
+#navbarmer a{
+  font-size:14px;
 }
 #header__content .navbar-dark .navbar-nav .nav-link {
-  margin: 0 15px;
+  margin:0 15px;
   color: white;
   padding: 0px;
   font-size: 15px;
-  font-weight: 500;
+  font-weight:500;
 }
-#header__content .navbar-dark .navbar-toggler-icon {
-  background-image: white;
+#header__content .navbar-dark .navbar-toggler-icon{
+  background-image:white;
 }
-.navbar span:first-of-type {
-  font-size: 14px;
-  margin: 0 -10px;
+.navbar span:first-of-type{
+  font-size:14px;
+  margin:0 -10px;
 }
-#header__content .navbar-dark .navbar-nav .nav-link:hover {
-  color: #1976d2;
+#header__content .navbar-dark .navbar-nav .nav-link:hover{
+  color:#1976d2;
 }
-#header__content {
-  background-color: black;
+ #header__content{
+  background-color:black;
   position: fixed;
-  display: block;
-  top: 0px;
-  width: 100%;
+  display:block;
+  top:0px;
+  width:100%;
+
   transition: all 0.5s;
   width: 100%;
   z-index: 950;
 }
 .container {
-  width: 100%;
-  max-width: 1680px;
-  margin: 0 auto;
+  width:100%;
+  max-width:1680px;
+  margin:0 auto;
 }
-.welcome {
-  width: 80%;
-  margin: 0 auto;
+.welcome{
+  width:80%;
+  margin:0 auto;
 }
-#header__content p {
-  text-align: right;
-  font-size: 15px;
-  margin: 8px 10px;
+#header__content p{
+  text-align:right;
+  font-size:15px;
+  margin:8px 10px;
 }
-.navbar img {
-  margin-top: -35px;
-  /* padding:20px 30px; */
-  vertical-align: middle;
+.navbar img{
+  margin-top:-35px;
+   /* padding:20px 30px; */
+    vertical-align: middle;
 }
-.navbar a span {
-  font-size: 15px;
+.navbar a span{
+  font-size:15px;
 }
-#header__content .collapse li {
-  margin-right: 10px;
+#header__content .collapse li{
+  margin-right:10px;
 }
-#header__content .navbar span:last-of-type {
-  color: white;
+#header__content .navbar span:last-of-type{
+  color:white;
 }
 /* END HEADER */
 /* CAROUSEL */
-.carousel img {
-  width: 100%;
-  height: 650px;
+.carousel img{
+  width:100%;
+  height:650px;
 }
-#carouselContent .carousel-caption {
+#carouselContent .carousel-caption{
   top: 50%;
-  left: 50%;
-  transform: translate(-100%, -70%);
-  padding: 50px 0px;
+  left:50%;
+  transform: translate(-100%,-70%);
+  padding:50px 0px;
 }
-.header__content {
-  color: white;
+.header__content{
+  color:white;
 }
-#carouselContent .carousel__title button {
-  text-align: left;
-  padding: 0px 29px;
+#carouselContent .carousel__title button{
+  text-align:left;
+  padding:0px 29px;
   border: none;
   background-color: black;
-  color: white;
-  cursor: pointer;
-  margin: 20px 0;
-  font-size: 15px;
+  color:white;
+  cursor:pointer;
+  margin:20px 0;
+  font-size:15px;
 }
-#carouselContent .carousel-caption p {
-  color: white;
-  font-size: 32px;
-  text-align: left;
-  line-height: 40px;
+#carouselContent .carousel-caption p{
+  color:white;
+  font-size:32px;
+  text-align:left;
+  line-height:40px;
 }
-#carouselContent .carousel-control-prev-icon {
-  height: 30px;
-  width: 30px;
-  font-weight: 400;
+#carouselContent .carousel-control-prev-icon{
+ height:30px;
+ width:30px;
+ font-weight:400;
 }
-#carouselContent .carousel-control-next-icon {
-  height: 30px;
-  width: 30px;
-  font-weight: 400;
-}
-.carousel__title .animate__animated.animate__fadeInDown {
+#carouselContent .carousel-control-next-icon{
+  height:30px;
+  width:30px;
+  font-weight:400;
+ }
+.carousel__title .animate__animated.animate__fadeInDown{
   animation-duration: 2s;
   animation-delay: 0.5s;
 }
-.carousel .carousel-control-next i {
-  font-size: 26px;
+.carousel .carousel-control-next i{
+  font-size:26px;
 }
-.carousel .carousel-control-prev i {
-  font-size: 26px;
+.carousel .carousel-control-prev i{
+  font-size:26px;
 }
 /*  END CAROUSEL */
 /* WELCOME */
-.welcome__button button {
-  color: black;
+.welcome__button button{
+  color:black;
 }
-.text {
-  display: flex;
+.text{
+  display:flex;
   justify-content: center;
   position: relative;
 }
 .welcome .form-control {
-  background-color: #ececec;
-  border: none;
-  color: black;
-  margin: 30px 0;
-  border-radius: none;
+    background-color: #ececec;
+    border: none;
+    color:black;
+    margin:30px 0;
+    border-radius: none; 
 }
-.welcome__button {
+.welcome__button{
   position: absolute;
-  top: 30px;
-  right: 50px;
-  font-size: 25px;
-  border: none;
+  top:30px;
+  right:50px;
+  font-size:25px;
+  border:none;
 }
-.welcome i {
-  font-size: 20px;
+.welcome i{
+  font-size:20px;
 }
-.welcome__content {
-  margin: 80px 0 40px 0;
-  width: 70%;
+.welcome__content{
+  margin:80px 0 40px 0;
+  width:70%;
 }
-.welcome__content button {
-  border: none;
-  background-color: #00bcd4;
-  padding: 5px 20px;
-  color: white;
-  margin: 30px 0;
+.welcome__content button{
+  border:none;
+  background-color:#00bcd4;
+  padding:5px 20px;
+  color:white;
+  margin:30px 0;
 }
-.welcome__content p:first-of-type {
-  color: white;
-  margin: 20px 0;
-  text-align: left;
-  font-size: 14px;
-  line-height: 30px;
+.welcome__content p:first-of-type{
+  color:white;
+  margin:20px 0;
+  text-align:left;
+  font-size:14px;
+  line-height:30px;
 }
-.welcome__content h2 {
-  color: white;
-  font-size: 27px;
-  font-weight: 400;
+.welcome__content h2{
+  color:white;
+  font-size:27px;
+  font-weight:400;
 }
-.welcome__content p {
-  color: white;
-  text-align: left;
-  font-size: 13px;
+.welcome__content p{
+  color:white;
+  text-align:left;
+  font-size:13px;
 }
 .animate__animated.animate__fadeInUp {
   --animate-duration: 2s;
 }
-.welcome__footer {
-  margin: 60px 0;
+.welcome__footer{
+  margin:60px 0;
 }
-.welcome__footer .col-md-3 {
-  position: relative;
-  width: 100%;
+.welcome__footer .col-md-3{
+  position:relative;
+  width:100%;
 }
 /* chưa hover */
-.welcome__footer .col-md-3::after {
-  content: '';
+.welcome__footer .col-md-3::after{
+  content:'';
   width: 0;
-  height: 5px;
-  background-color: #2196f3;
+  height:5px;
+  background-color: 
+  #2196f3;
   display: block;
   transition: all 1s;
 }
-.welcome__footer .col-md-3:hover::after {
-  width: 100%;
+.welcome__footer .col-md-3:hover::after{
+  width:100%;
 }
 /* END WELCOME */
 /* NEWS */
-
 .list-group-item-action {
   width: auto;
 }
