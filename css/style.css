@@ -15,6 +15,16 @@ body {
   animation-name: fadeIn;
   animation-duration: 1s;
 }
+.inline-animation {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1.5s;
+}
+
+.inline-animation.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -291,7 +301,6 @@ body {
   color: #fff;
 }
 
-
 .footer__subnav a {
   color: #636363;
   text-decoration: none;
@@ -305,7 +314,6 @@ body {
 
 .footer__subnav-content {
   flex-direction: row-reverse;
- 
 }
 
 .footer__subnav-left ul {
@@ -330,20 +338,17 @@ body {
 
 /* START MODAL */
 
-#legal-modal{
+#legal-modal {
   display: block;
   font-size: 13px;
-  
-  
 }
-
 
 .modal-header {
   border: none;
 }
 .modal-body {
   color: #000;
-  margin-top: 20px;;
+  margin-top: 20px;
   margin: 0 40px;
 }
 
@@ -355,7 +360,7 @@ body {
 }
 
 .modal-dialog {
-  width: 892px; 
+  width: 892px;
   max-width: 90%;
 }
 .labal-nav ul {
@@ -372,8 +377,6 @@ body {
 #legal-tab-content p {
   margin-bottom: 1rem;
 }
-
-
 
 .agree span {
   line-height: 30px;
@@ -417,12 +420,12 @@ body {
 
 .technical__content::after,
 .analysis__content::after {
-  content: "";
+  content: '';
   width: 50px;
   height: 1px;
   background-color: #000;
   display: block;
-  margin: 28px 0 ;
+  margin: 28px 0;
   margin-left: -20px;
 }
 
@@ -453,11 +456,13 @@ body {
   font-size: 13px;
 }
 
-.form-situation .form-check{
+.form-situation .form-check {
   margin-bottom: 30px;
 }
 
-.form-group, .form-control, .custom-select {
+.form-group,
+.form-control,
+.custom-select {
   margin-bottom: 2rem;
 }
 /* END FOOTER */
@@ -474,8 +479,7 @@ body {
   .footer__subnav-content {
     max-width: 75%;
     float: right;
-  
-}
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -511,13 +515,12 @@ body {
     margin-bottom: 30px;
   }
   .footer__subnav {
-    max-width: 100%;   
-        
+    max-width: 100%;
   }
-  .footer__subnav-content{
+  .footer__subnav-content {
     max-width: 100%;
     float: left;
-    flex-direction: row;    
+    flex-direction: row;
   }
   .footer__backtotop {
     min-width: 100%;
@@ -530,37 +533,32 @@ body {
   }
 
   .analysis__item-speed {
-   min-width: 50%;   
-   margin-bottom: 2rem;
+    min-width: 50%;
+    margin-bottom: 2rem;
   }
 
   .analysis__item-google {
     max-width: 50%;
     margin-bottom: 2rem;
   }
-
 }
 
-
-
 @media screen and (max-width: 768px) {
-    .choose-setting button {   
-      margin-bottom: 1rem;
-      height: 35px;
-      font-size: 14px;
-      position: absolute;  
-      right: -80px;
-      width: 150px;
-      padding: 7px 15px;
+  .choose-setting button {
+    margin-bottom: 1rem;
+    height: 35px;
+    font-size: 14px;
+    position: absolute;
+    right: -80px;
+    width: 150px;
+    padding: 7px 15px;
   }
-  
 
   .btn-save {
     top: 0;
-    
   }
-  .btn-agree {  
-    top: 40px;  
+  .btn-agree {
+    top: 40px;
   }
 }
 
@@ -569,10 +567,6 @@ body {
     min-width: 100%;
     margin-bottom: 2rem;
   }
-
 }
-
-
-
 
 /* END MEDIA */
