@@ -622,12 +622,12 @@
                             </ul>
                         </div>
                         <div class="modal fade mfp-hide " id="legal-modal" tabindex="-1"
-                            aria-labelledby="legal-modalLabel" aria-hidden="true">
+                            aria-labelledby="legal-modalLabel" aria-hidden="true" data-backdrop="static">
                             <div class="modal-dialog">
                                 <div class="modal-content ">
                                     <div class="modal-header">
                                         <button type="button" class="close popup-modal-dismiss" data-dismiss="modal"
-                                            aria-label="Close">
+                                            aria-label="Close" >
                                             <span aria-hidden="true">&times;</span>
                                         </button>
                                     </div>
@@ -1687,7 +1687,7 @@
                             </div>
                         </div>
                         <div class="modal fade mfp-hide white-popup-block" id="contact-modal" tabindex="-1"
-                            aria-labelledby="contact-modalLabel" aria-hidden="true">
+                            aria-labelledby="contact-modalLabel" aria-hidden="true" data-backdrop="static">
                             <div class="modal-dialog  ">
                                 <div class="modal-content">
                                     <div class="modal-header">
@@ -1831,6 +1831,7 @@
             $(document).on('click', '.popup-modal-dismiss', function (e) {
                 e.preventDefault();
                 $.magnificPopup.close();
+                
             });
 
         });
