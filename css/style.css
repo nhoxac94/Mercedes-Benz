@@ -93,10 +93,11 @@ body {
 #header__content .nav-icon{
   color:white;
 }
-.nav-icon{
+#header__content .navbar-nav .nav-icon{
   position:absolute;
-  top:60px;
-  right:20px;
+  top:40px;
+  right:50px;
+  margin-top:-40px;
 }
 .nav-input{
   position:absolute;
@@ -165,11 +166,6 @@ body {
   position: absolute;
   top:20px;
   left:90px;
-}
-.nav-icon-mobile{
-  position: absolute;
-  top:40px;
-  right:50px;
 }
 .nav-icon-mobile{
   color:white;
@@ -349,10 +345,10 @@ body {
   .carousel img{
     height:300px;
   }
-  .nav-icon{
+  #header__content .navbar .nav-icon{
     position: absolute;
-    right:65px;
-    top:43px;
+    right:85px;
+    
   }
   .navbar{
     margin-top:-10px;
@@ -434,11 +430,6 @@ body {
     position: absolute;
     right:20px;
   }
-  .nav-icon{
-    position:absolute;
-    top:55px;
-    right:80px;
-  }
   .nav-icon-first{
     display: none;
   }
@@ -468,8 +459,8 @@ body {
   }
   .nav-icon{
     position:absolute;
-    top:55px;
-    right:80px;
+    top:17px;
+    right:60px;
   }
   .navbar-mobile span:first-of-type{
     font-size:16px;
@@ -487,11 +478,6 @@ body {
   }
   .nav-bar-btn{
     display: none;
-  }
-  .nav-icon{
-    position:absolute;
-    top:60px;
-    right:20px;
   }
   .nav-icon-first{
     display: none;
